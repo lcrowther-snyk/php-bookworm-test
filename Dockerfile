@@ -1,4 +1,4 @@
-FROM debian:bookworm-slim
+FROM debian:12.15-slim
 RUN rm -f /etc/apt/sources.list.d/debian.sources \
  && printf 'deb http://deb.debian.org/debian bookworm main\n' > /etc/apt/sources.list \
  && apt-get update \
